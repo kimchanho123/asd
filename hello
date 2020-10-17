@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void hello(char *p, char male);
+
+int main()
+{
+	char name, male;
+	printf("이름을 입력하시오:");
+	scanf("%c", &name);
+
+	printf("성별을 입력하시오(m/f):");
+	scanf("%c", &male);
+
+	hello(&name, male);
+
+	return 0;
+}
+void hello(char *p, char male)
+{
+	if(male=='f')
+		print("Hello Ms. %c\n", p);
+	else if(male=='m')
+		print("Hello Mr. %c\n", p);
+	else
+		printf("Hello %c\n", p);
+}
+
