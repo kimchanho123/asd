@@ -23,11 +23,11 @@ char selection(char act)
 		level_Up();
 	}
 	if(act=='a')
-		printf("파워 슬래쉬!\n%1.lf의 데미지!", (double)2*ATK);
+		printf("파워 슬래쉬!\n%1.lf의 데미지!\n", (double)2*ATK);
 	if(act=='b')
-		printf("바디 태클!\n%1.lf의 데미지!", (double)ATK);
+		printf("바디 태클!\n%1.lf의 데미지!\n", (double)ATK);
 	if(act=='c')
-		printf("파이널 어택!\n%1.lf의 데미지!", (double)3*ATK);
+		printf("파이널 어택!\n%1.lf의 데미지!\n", (double)3*ATK);
 	return act;
 
 	
