@@ -1,0 +1,49 @@
+#include<stdio.h>
+
+int level =1;
+int HP = 500;
+int ATK = 50;
+
+void level_Up();
+void print_Status();
+char selection();
+
+int main()
+{
+	while(selection() != 'x'){	
+	}
+}
+char selection(char act)
+{
+	print_Status();
+	printf("행동을 입력하세요(a/b/c/x/l):");
+	scanf("%c", &act);
+	if(act=='l'){
+		printf("레벨 업!\n");
+		level_Up();
+	}
+	if(act=='a')
+		printf("파워 슬래쉬!\n%1.lf의 데미지!", (double)2*ATK);
+	if(act=='b')
+		printf("바디 태클!\n%1.lf의 데미지!", (double)ATK);
+	if(act=='c')
+		printf("파이널 어택!\n%1.lf의 데미지!", (double)3*ATK);
+	return act;
+
+	
+}
+
+void level_Up()
+{
+	level+=1;
+	ATK+=15;
+	HP+=100;
+}
+
+void print_Status()
+{
+	printf("레벨: %d\n", level);
+	printf("체력: %d\n", HP);
+	printf("공격력: %d\n", ATK);
+}
+
