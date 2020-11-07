@@ -18,6 +18,7 @@ char selection(char act)
 	print_Status();
 	printf("행동을 입력하세요(a/b/c/x/l):");
 	scanf("%c", &act);
+	getchar();
 	if(act=='l'){
 		printf("레벨 업!\n");
 		level_Up();
