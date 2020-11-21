@@ -15,13 +15,13 @@ int main()
 	{
 		printf("학번을 입력하시오:");
 		scanf("%d", &list[i].num);
-		getchar();
+		
 		printf("이름을 입력하시오:");
-		scanf("%d", list[i].name);
-		getchar();
+		scanf("%s", list[i].name);
+		
 		printf("학점을 입력하시오:");
 		scanf("%lf", &list[i].grade);
-		getchar();
+		
 		printf("\n");
 	}
 	printf("======================================================\n");
